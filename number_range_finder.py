@@ -20,4 +20,6 @@ range_21_30 = []
 range_31_40 = []
 range_41_50 = []
 
+while True:
 
+    number = int(input("Please Enter a Number ranging from 1 to 50: "))
