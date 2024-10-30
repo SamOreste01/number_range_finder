@@ -7,10 +7,11 @@
 
 def valid_input(number):
     try:
-        number == int(number): #number must be integers
+        number == int(number) #number must be integers
         if 1 >= number <= 50: #number must be 1 to 50
             return True
-        return False
+        else:
+            return False
     except ValueError:
         return False
     
@@ -23,3 +24,26 @@ range_41_50 = []
 while True:
 
     number = int(input("Please Enter a Number ranging from 1 to 50: "))
+
+    if valid_input:
+        if 1 <= number <= 10:
+            range_1_10.append(number)
+        elif 11 <= number <= 20:
+            range_11_20.append(number)
+        elif 21 <= number <= 30:
+            range_21_30.append(number)
+        elif 31 <= number <= 40:
+            range_31_40.append(number)
+        elif 41 <= number <= 50:
+            range_41_50.append(number)
+
+    else:
+        break
+
+print(f"Range 1 to 10: {range_1_10}")
+print(f"Range 11 to 20: {range_11_20}")
+print(f"Range 21 to 30: {range_21_30}")
+print(f"Range 31 to 40: {range_31_40}")
+print(f"Range 41 to 50: {range_41_50}")
+
+
