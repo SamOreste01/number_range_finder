@@ -13,3 +13,11 @@ def valid_input(number):
         return False
     except ValueError:
         return False
+    
+range_1_10 = []
+range_11_20 = []
+range_21_30 = []
+range_31_40 = []
+range_41_50 = []
+
+
