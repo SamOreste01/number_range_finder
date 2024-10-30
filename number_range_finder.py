@@ -11,7 +11,7 @@ def valid_input(number):
         if 1 >= number <= 50: #number must be 1 to 50
             return True
         else:
-            return False
+            break
     except ValueError:
         return False
     
