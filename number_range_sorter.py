@@ -1,16 +1,8 @@
-#Define valid input: Inside range 1-50, must be numbers
 #Create a list for every range 1-10, 11-20, 21-30, 31-40, 41-50
 #Create a loop
     # Ask the user to input
     #Use if,else to find the range, and append to add input to list
 #Use len() to count the numbers in range
-
-def valid_input(number):
-    try:
-        number == int(number) #number must be integers
-        return 1 >= number <= 50 #number must be 1 to 50
-    except ValueError:
-        return False
 
 range_1_10 = []
 range_11_20 = []
@@ -25,7 +17,7 @@ while True:
         print("Invalid Input! Enter Numbers ranging from 1 to 50.")
         continue
 
-    if valid_input(number):
+    if 1 <= number <= 50:
         if 1 <= number <= 10:
             range_1_10.append(number)
         elif 11 <= number <= 20:
@@ -37,7 +29,7 @@ while True:
         elif 41 <= number <= 50:
             range_41_50.append(number)
     else:
-        print("Invalid Input! Enter Numbers ranging from 1 to 50.")
+        print("Invalid Input! Now Leaving Number Range Sorter.")
         break
 
 print(f"Range 1 to 10: ", len(range_1_10))
